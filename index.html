@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trilhas Digitais de História - Escola Januário E. de Lima</title>
+    <title>Web App Educativo - Escola Januário E. de Lima</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script>
@@ -36,7 +36,6 @@
             --shadow-medium: rgba(0, 0, 0, 0.15);
             --shadow-heavy: rgba(0, 0, 0, 0.25);
         }
-
         [data-theme="dark"] {
             --bg-primary: #111827;
             --bg-secondary: #1f2937;
@@ -49,50 +48,39 @@
             --shadow-medium: rgba(0, 0, 0, 0.4);
             --shadow-heavy: rgba(0, 0, 0, 0.6);
         }
-
         /* Aplicação das variáveis */
         body {
             background-color: var(--bg-primary);
             color: var(--text-primary);
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-
         .bg-white {
             background-color: var(--bg-secondary) !important;
         }
-
         .bg-gray-50, .bg-gray-100 {
             background-color: var(--bg-tertiary) !important;
         }
-
         .text-gray-800 {
             color: var(--text-primary) !important;
         }
-
         .text-gray-600 {
             color: var(--text-secondary) !important;
         }
-
         .text-gray-500 {
             color: var(--text-tertiary) !important;
         }
-
         .border-gray-200 {
             border-color: var(--border-color) !important;
         }
-
         .shadow-sm {
             box-shadow: 0 1px 2px 0 var(--shadow-light) !important;
         }
-
         .shadow-md {
             box-shadow: 0 4px 6px -1px var(--shadow-light), 0 2px 4px -1px var(--shadow-light) !important;
         }
-
         .shadow-lg {
             box-shadow: 0 10px 15px -3px var(--shadow-medium), 0 4px 6px -2px var(--shadow-light) !important;
         }
-
         /* Toggle Switch Styles */
         .theme-toggle {
             position: relative;
@@ -105,19 +93,15 @@
             border: none;
             outline: none;
         }
-
         .theme-toggle:hover {
             background: #4b5563;
         }
-
         [data-theme="dark"] .theme-toggle {
             background: #fbbf24;
         }
-
         [data-theme="dark"] .theme-toggle:hover {
             background: #f59e0b;
         }
-
         .theme-toggle::before {
             content: '';
             position: absolute;
@@ -130,12 +114,10 @@
             transition: transform 0.3s ease;
             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
-
         [data-theme="dark"] .theme-toggle::before {
             transform: translateX(30px);
             background: #1f2937;
         }
-
         .theme-toggle-icon {
             position: absolute;
             top: 50%;
@@ -143,75 +125,60 @@
             font-size: 14px;
             transition: opacity 0.3s ease;
         }
-
         .theme-toggle .sun-icon {
             left: 8px;
             color: #fbbf24;
             opacity: 0;
         }
-
         .theme-toggle .moon-icon {
             right: 8px;
             color: #e5e7eb;
             opacity: 1;
         }
-
         [data-theme="dark"] .theme-toggle .sun-icon {
             opacity: 1;
         }
-
         [data-theme="dark"] .theme-toggle .moon-icon {
             opacity: 0;
         }
-
         /* Outras transições */
         .transition-height {
             transition: max-height 0.3s ease-in-out;
             overflow: hidden;
         }
-        
         .countdown {
             font-family: monospace;
             font-weight: bold;
             color: #d9534f;
         }
-        
         .btn-enhanced {
             transition: all 0.3s ease;
             transform: translateY(0);
         }
-        
         .btn-enhanced:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px var(--shadow-medium);
         }
-        
         .card-enhanced {
             transition: all 0.3s ease;
         }
-        
         .card-enhanced:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px var(--shadow-light);
         }
-
         /* Ajustes específicos para modo escuro */
         [data-theme="dark"] .bg-blue-50 {
             background-color: #1e3a8a !important;
         }
-
         [data-theme="dark"] .bg-green-50 {
             background-color: #14532d !important;
         }
-
         [data-theme="dark"] .bg-purple-50 {
             background-color: #581c87 !important;
         }
-
         [data-theme="dark"] .bg-red-50 {
             background-color: #7f1d1d !important;
         }
-
         /* Iframe adjustments for dark mode */
         [data-theme="dark"] iframe {
             filter: brightness(0.8) contrast(1.2);
@@ -219,7 +186,6 @@
         }
     </style>
 </head>
-
 <body class="bg-gray-100 min-h-screen">
     <!-- Header -->
     <header class="bg-blue-800 text-white shadow-lg">
@@ -227,9 +193,9 @@
             <div class="flex items-center mb-4 md:mb-0">
                 <i class="fas fa-book-open text-2xl mr-3"></i>
                 <div>
-                    <h1 class="text-2xl font-bold">Trilhas Digitais de História e LPT</h1>
+                    <h1 class="text-2xl font-bold">Trilhas Digitais de Aprendizagem</h1>
                     <p class="text-sm opacity-90">Escola Januário E. de Lima - Cultivando saberes 🌱</p>
-                    <p class="text-xs opacity-75">Prof. Sérgio Araújo 2025</p>
+                    <p class="text-xs opacity-75">2025</p>
                 </div>
             </div>
             <nav class="flex items-center space-x-4">
@@ -265,28 +231,27 @@
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Bem-vindos às Trilhas Digitais de Aprendizagem</h2>
                 <p class="text-gray-600 mb-6">
                     <strong>Selecione sua série abaixo para acessar as trilhas de aprendizagem disponíveis. 
-                    Cada trilha contém atividades, recursos e desafios para aprofundar seus conhecimentos em História e LPT - Literatura e Produção Textual.</strong>
+                    Cada trilha contém atividades, recursos e desafios para aprofundar seus conhecimentos em todos os componentes curriculares.</strong>
                 </p>
-                
                 <!-- Grade Selection -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
                     <button onclick="showSection('6ano')" class="bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 card-enhanced">
                         <i class="fas fa-star text-3xl mb-2"></i>
                         <h3 class="text-xl font-bold">6º Ano</h3>
-                        <p class="text-sm mt-2">Mundos antigos</p>
+                        <p class="text-sm mt-2">Início da Caminhada</p>
                     </button>
                     <button onclick="showSection('7ano')" class="bg-green-600 hover:bg-green-700 text-white rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 card-enhanced">
                         <i class="fas fa-star text-3xl mb-2"></i>
                         <i class="fas fa-star text-3xl mb-2"></i>
                         <h3 class="text-xl font-bold">7º Ano</h3>
-                        <p class="text-sm mt-2">Mundos medieval e moderno</p>
+                        <p class="text-sm mt-2">Conhecendo novos mundos</p>
                     </button>
                     <button onclick="showSection('8ano')" class="bg-purple-600 hover:bg-purple-700 text-white rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 card-enhanced">
                         <i class="fas fa-star text-3xl mb-2"></i>
                         <i class="fas fa-star text-3xl mb-2"></i>
                         <i class="fas fa-star text-3xl mb-2"></i>
                         <h3 class="text-xl font-bold">8º Ano</h3>
-                        <p class="text-sm mt-2">Mundos moderno e contemporâneo</p>
+                        <p class="text-sm mt-2">Aprofundando os conhecimentos</p>
                     </button>
                     <button onclick="showSection('9ano')" class="bg-red-600 hover:bg-red-700 text-white rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 card-enhanced">
                         <i class="fas fa-star text-3xl mb-2"></i>
@@ -294,11 +259,10 @@
                         <i class="fas fa-star text-3xl mb-2"></i>
                         <i class="fas fa-star text-3xl mb-2"></i>
                         <h3 class="text-xl font-bold">9º Ano</h3>
-                        <p class="text-sm mt-2">Mundo Contemporâneo</p>
+                        <p class="text-sm mt-2">O princípio de uma nova caminhada</p>
                     </button>
                 </div>
             </div>
-
             <!-- Novidades Section -->
             <div class="bg-white rounded-lg shadow-md p-6">
                 <h2 class="text-3xl font-bold text-gray-800 mb-6">Pega a visão:</h2>
@@ -309,7 +273,6 @@
                         <p class="text-gray-600 mb-3">Time Line Informativa</p>
                         <iframe src="https://web2.nekoweb.org/novastrilhas/timeline/" width="100%" height="250" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
                     </div>
-                    
                     <!-- Bem-vindos -->
                     <div class="bg-green-50 p-4 rounded-lg card-enhanced">
                         <h3 class="text-xl font-semibold mb-2"><strong>Estamos de volta!</strong></h3>
@@ -325,7 +288,6 @@
                         </div>
                         <p><strong>Então, sigam-me os bons!</strong></p>
                     </div>
-                    
                     <!-- Links da Hora -->
                     <div class="bg-purple-50 p-4 rounded-lg card-enhanced">
                         <h3 class="text-xl font-semibold mb-2">Links da Hora</h3>
@@ -348,7 +310,6 @@
                         <i class="fas fa-arrow-left mr-2"></i> Voltar
                     </button>
                 </div>
-                
                 <!-- História Section -->
                 <div class="mb-8">
                     <h3 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
@@ -374,7 +335,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Trilha 2 -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
                             <div class="flex items-start">
@@ -397,7 +357,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Trilha 3 - Mesopotâmia -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 md:col-span-2 card-enhanced">
                             <div class="flex items-start mb-4">
@@ -447,7 +406,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Card Extra para Implementação Futura -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced border-2 border-dashed border-blue-300">
                             <div class="flex items-start">
@@ -471,9 +429,8 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- LPT Section -->
-                <div>
+                <div class="mb-8">
                     <h3 class="text-xl font-bold text-purple-800 mb-4 flex items-center">
                         <i class="fas fa-feather-alt mr-2"></i>LITERATURA E PRODUÇÃO TEXTUAL
                     </h3>
@@ -505,7 +462,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Card Extra LPT -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced border-2 border-dashed border-purple-300">
                             <div class="flex items-start">
@@ -529,6 +485,140 @@
                         </div>
                     </div>
                 </div>
+                <!-- Outras Matérias Section -->
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4 flex items-center">
+                        <i class="fas fa-book mr-2"></i>OUTRAS MATÉRIAS
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Português -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/portugues.jpg" alt="Português" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Português</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Língua Portuguesa</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Matemática -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/matematica.jpg" alt="Matemática" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Matemática</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Matemática</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ciências -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/ciencias.jpg" alt="Ciências" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Ciências</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Ciências Naturais</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Geografia -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/geografia.jpg" alt="Geografia" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Geografia</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Geografia</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Inglês -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/ingles.jpg" alt="Inglês" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Inglês</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Língua Inglesa</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Arte -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/arte.jpg" alt="Arte" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Arte</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Artes Visuais</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                         <!-- Religião -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced md:col-span-3 lg:col-span-1 mx-auto">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/religiao.jpg" alt="Religião" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Religião</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Ensino Religioso</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section> 
        <!-- 7º Ano Section -->
@@ -540,7 +630,6 @@
                         <i class="fas fa-arrow-left mr-2"></i> Voltar
                     </button>
                 </div>
-                
                 <!-- História Section -->
                 <div class="mb-8">
                     <h3 class="text-xl font-bold text-green-800 mb-4 flex items-center">
@@ -566,7 +655,6 @@
                                 </button>
                             </div>
                         </div>
-
                         <!-- Trilha 2 -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
                             <div class="flex items-start">
@@ -586,7 +674,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Trilha 3 - Renascimento -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 md:col-span-2 card-enhanced">
                             <div class="flex items-start">
@@ -615,7 +702,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Card Extra para Implementação Futura -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced border-2 border-dashed border-green-300">
                             <div class="flex items-start">
@@ -639,9 +725,8 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- LPT Section -->
-                <div>
+                <div class="mb-8">
                     <h3 class="text-xl font-bold text-purple-800 mb-4 flex items-center">
                         <i class="fas fa-feather-alt mr-2"></i>LITERATURA E PRODUÇÃO TEXTUAL
                     </h3>
@@ -673,7 +758,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Card Extra LPT -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced border-2 border-dashed border-purple-300">
                             <div class="flex items-start">
@@ -697,6 +781,140 @@
                         </div>
                     </div>
                 </div>
+                <!-- Outras Matérias Section -->
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4 flex items-center">
+                        <i class="fas fa-book mr-2"></i>OUTRAS MATÉRIAS
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Português -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/portugues.jpg" alt="Português" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Português</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Língua Portuguesa</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Matemática -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/matematica.jpg" alt="Matemática" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Matemática</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Matemática</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ciências -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/ciencias.jpg" alt="Ciências" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Ciências</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Ciências Naturais</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Geografia -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/geografia.jpg" alt="Geografia" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Geografia</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Geografia</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Inglês -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/ingles.jpg" alt="Inglês" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Inglês</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Língua Inglesa</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Arte -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/arte.jpg" alt="Arte" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Arte</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Artes Visuais</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                         <!-- Religião -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced md:col-span-3 lg:col-span-1 mx-auto">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/religiao.jpg" alt="Religião" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Religião</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Ensino Religioso</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>      
   <!-- 8º Ano Section -->
@@ -708,7 +926,6 @@
                         <i class="fas fa-arrow-left mr-2"></i> Voltar
                     </button>
                 </div>
-                
                 <!-- História Section -->
                 <div class="mb-8">
                     <h3 class="text-xl font-bold text-purple-800 mb-4 flex items-center">
@@ -734,7 +951,6 @@
                                 </button>
                             </div>
                         </div>
-
                         <!-- Trilha 2 -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
                             <div class="flex items-start">
@@ -754,7 +970,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Trilha 3 - Revolução Industrial -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 md:col-span-2 card-enhanced">
                             <div class="flex items-start">
@@ -786,7 +1001,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Card Extra para Implementação Futura -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced border-2 border-dashed border-purple-300">
                             <div class="flex items-start">
@@ -810,9 +1024,8 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- LPT Section -->
-                <div>
+                <div class="mb-8">
                     <h3 class="text-xl font-bold text-purple-800 mb-4 flex items-center">
                         <i class="fas fa-feather-alt mr-2"></i>LITERATURA E PRODUÇÃO TEXTUAL
                     </h3>
@@ -844,7 +1057,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Card Extra LPT -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced border-2 border-dashed border-purple-300">
                             <div class="flex items-start">
@@ -868,6 +1080,140 @@
                         </div>
                     </div>
                 </div>
+                <!-- Outras Matérias Section -->
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4 flex items-center">
+                        <i class="fas fa-book mr-2"></i>OUTRAS MATÉRIAS
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Português -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/portugues.jpg" alt="Português" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Português</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Língua Portuguesa</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Matemática -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/matematica.jpg" alt="Matemática" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Matemática</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Matemática</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ciências -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/ciencias.jpg" alt="Ciências" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Ciências</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Ciências Naturais</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Geografia -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/geografia.jpg" alt="Geografia" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Geografia</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Geografia</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Inglês -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/ingles.jpg" alt="Inglês" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Inglês</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Língua Inglesa</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Arte -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/arte.jpg" alt="Arte" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Arte</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Artes Visuais</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                         <!-- Religião -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced md:col-span-3 lg:col-span-1 mx-auto">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/religiao.jpg" alt="Religião" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Religião</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Ensino Religioso</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>        <!--
  9º Ano Section -->
@@ -879,7 +1225,6 @@
                         <i class="fas fa-arrow-left mr-2"></i> Voltar
                     </button>
                 </div>
-                
                 <!-- História Section -->
                 <div class="mb-8">
                     <h3 class="text-xl font-bold text-red-800 mb-4 flex items-center">
@@ -905,7 +1250,6 @@
                                 </button>
                             </div>
                         </div>
-
                         <!-- Trilha 2 -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
                             <div class="flex items-start">
@@ -928,7 +1272,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Trilha 3 - Século XX -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 md:col-span-2 card-enhanced">
                             <div class="flex items-start">
@@ -951,7 +1294,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Card Extra para Implementação Futura -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced border-2 border-dashed border-red-300">
                             <div class="flex items-start">
@@ -975,9 +1317,8 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- LPT Section -->
-                <div>
+                <div class="mb-8">
                     <h3 class="text-xl font-bold text-purple-800 mb-4 flex items-center">
                         <i class="fas fa-feather-alt mr-2"></i>LITERATURA E PRODUÇÃO TEXTUAL
                     </h3>
@@ -1006,7 +1347,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <!-- Card Extra LPT -->
                         <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced border-2 border-dashed border-purple-300">
                             <div class="flex items-start">
@@ -1030,10 +1370,143 @@
                         </div>
                     </div>
                 </div>
+                <!-- Outras Matérias Section -->
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4 flex items-center">
+                        <i class="fas fa-book mr-2"></i>OUTRAS MATÉRIAS
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Português -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/portugues.jpg" alt="Português" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Português</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Língua Portuguesa</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Matemática -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/matematica.jpg" alt="Matemática" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Matemática</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Matemática</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ciências -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/ciencias.jpg" alt="Ciências" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Ciências</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Ciências Naturais</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Geografia -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/geografia.jpg" alt="Geografia" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Geografia</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Geografia</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Inglês -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/ingles.jpg" alt="Inglês" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Inglês</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Língua Inglesa</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Arte -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/arte.jpg" alt="Arte" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Arte</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Artes Visuais</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                         <!-- Religião -->
+                        <div class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-200 card-enhanced md:col-span-3 lg:col-span-1 mx-auto">
+                            <div class="flex items-start">
+                                <img src="https://web2.nekoweb.org/novastrilhas/religiao.jpg" alt="Religião" class="w-20 h-20 rounded mr-4 object-cover">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-indigo-800">Religião</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Ensino Religioso</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 1
+                                </a>
+                                <a href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm inline-flex items-center btn-enhanced">
+                                    <i class="fas fa-link mr-2"></i>Link 2
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
     <!-- Footer -->
     <footer class="bg-blue-800 text-white py-6 mt-12">
         <div class="container mx-auto px-4 text-center">
@@ -1041,14 +1514,12 @@
             <p class="text-sm opacity-75">Desenvolvido com ❤️ para a educação - Prof. Sérgio Araújo</p>
         </div>
     </footer>
-
     <script>
         // Sistema de Modo Escuro/Claro
         function initializeTheme() {
             // Verificar preferência salva ou preferência do sistema
             const savedTheme = localStorage.getItem('theme');
             const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            
             if (savedTheme) {
                 document.documentElement.setAttribute('data-theme', savedTheme);
             } else if (systemPrefersDark) {
@@ -1057,14 +1528,11 @@
                 document.documentElement.setAttribute('data-theme', 'light');
             }
         }
-
         function toggleTheme() {
             const currentTheme = document.documentElement.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
             document.documentElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            
             // Adicionar feedback visual
             const button = document.querySelector('.theme-toggle');
             button.style.transform = 'scale(0.95)';
@@ -1072,7 +1540,6 @@
                 button.style.transform = 'scale(1)';
             }, 150);
         }
-
         // Função para mostrar seções
         function showSection(sectionId) {
             // Esconder todas as seções
@@ -1083,52 +1550,42 @@
                     element.classList.add('hidden');
                 }
             });
-            
             // Mostrar a seção selecionada
             const targetSection = document.getElementById(sectionId + '-section');
             if (targetSection) {
                 targetSection.classList.remove('hidden');
             }
-            
             // Scroll para o topo
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-
         // Inicializar aplicação
         document.addEventListener('DOMContentLoaded', function() {
             initializeTheme();
             showSection('home');
         });
-
         // Sistema de contagem regressiva (se necessário)
         function updateCountdowns() {
             const countdownElements = document.querySelectorAll('.countdown');
             const now = new Date();
-            
             countdownElements.forEach(element => {
                 const endDate = new Date(element.getAttribute('data-end'));
                 const diff = endDate - now;
-                
                 if (diff <= 0) {
                     element.textContent = "Tempo esgotado!";
                     return;
                 }
-                
                 const days = Math.floor(diff / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-                
                 element.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
             });
         }
-
         // Atualizar contadores a cada segundo (se houver elementos com countdown)
         if (document.querySelectorAll('.countdown').length > 0) {
             setInterval(updateCountdowns, 1000);
             updateCountdowns(); // Chamada inicial
         }
-
         // Adicionar efeitos de hover suaves
         document.addEventListener('DOMContentLoaded', function() {
             // Adicionar efeito de parallax suave nos cards
@@ -1137,7 +1594,6 @@
                 card.addEventListener('mouseenter', function() {
                     this.style.transform = 'translateY(-5px) scale(1.02)';
                 });
-                
                 card.addEventListener('mouseleave', function() {
                     this.style.transform = 'translateY(0) scale(1)';
                 });
